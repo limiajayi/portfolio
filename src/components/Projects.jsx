@@ -15,7 +15,7 @@ const Projects = () => {
     <div className="projects">
         
         <div className="bigProject border">
-          <Bar text={"Big Project"} color={"purple"} />
+          <Bar text={"Big Project"} color={"pink"} />
           Hi im big project
         </div>
         <Project />

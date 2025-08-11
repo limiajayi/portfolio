@@ -13,7 +13,7 @@ const Fun = () => {
 const Skill = () => {
     return (
         <div className="skill border">
-            <Bar text={"Fun Facts"} color={"purple"} />
+            <Bar text={"Skills"} color={"pink"} />
             yoooo im skills
         </div>
     )
