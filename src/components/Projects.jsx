@@ -12,7 +12,7 @@ const Project = () => {
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects border">
         
         <div className="bigProject border">
           <Bar text={"Big Project"} color={"pink"} />
