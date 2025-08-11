@@ -1,30 +1,9 @@
 import { useState } from 'react'
+import Home from './components/Home.jsx'
+import Projects from './components/Projects.jsx'
 import Nav from './components/Nav.jsx'
+import Skills from './components/Skills.jsx'
 import './styles/App.css'
-
-const Skills = () => {
-  return (
-    <div className="skills border">
-
-    </div>
-  )
-}
-
-const Projects = () => {
-  return (
-    <div className="projects border">
-
-    </div>
-  )
-}
-
-const Home = () => {
-  return (
-    <div className='home border'>
-
-    </div>
-  )
-}
 
 const App = () => {
   
