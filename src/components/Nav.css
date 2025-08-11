@@ -1,0 +1,17 @@
+
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid var(--black);
+    height: 3.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar a {
+    text-decoration: none;
+}

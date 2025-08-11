@@ -7,6 +7,10 @@
     text-align: left;
     color: black;
     font-family: Inter, sans-serif;
+    --pink: rgba(246, 158, 196, 1);
+    --purple: rgba(161, 132, 186, 1);
+    --beige: rgba(253, 249, 224, 1);
+    --black: rgb(45, 0, 0);
 }
 
 body {
