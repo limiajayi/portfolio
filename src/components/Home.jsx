@@ -4,7 +4,7 @@ import Bar from './Bar'
 const Work = () => {
     return (
         <div className="work border">
-            <Bar text={"Work Experience"} />
+            <Bar text={"Work Experience"} color={"purple"} />
         </div>
     )
 }
@@ -12,7 +12,7 @@ const Work = () => {
 const About = () => {
     return (
         <div className="about border">
-            <Bar text={"About"}/>
+            <Bar text={"About"} color={"pink"}/>
             
         </div>
     )

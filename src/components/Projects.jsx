@@ -1,8 +1,10 @@
 import './Projects.css'
+import Bar from './Bar'
 
 const Project = () => {
   return (
     <div className="project border">
+      <Bar text={"Project"} color={"purple"} />
       hi im small project
     </div>
   )
@@ -13,6 +15,7 @@ const Projects = () => {
     <div className="projects">
         
         <div className="bigProject border">
+          <Bar text={"Big Project"} color={"purple"} />
           Hi im big project
         </div>
         <Project />

@@ -1,6 +1,6 @@
 import './Bar.css'
 
-const Bar = ({ text }) => {
+const Bar = ({ text, color }) => {
     return (
         <div className="bar">
             <div>
