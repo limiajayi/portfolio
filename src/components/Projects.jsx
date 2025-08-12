@@ -43,8 +43,6 @@ const Projects = () => {
         <Project className={"project border"} color={"purple"} />
         <Project className={"project border"} color={"purple"} />
         <Project className={"project border"} color={"purple"} />
-
-        {console.log(repos)}
     </div>
   )
 }
