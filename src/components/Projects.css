@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 2rem;
+    height: 16rem;
 }
 
 .bigProject {
@@ -13,6 +14,8 @@
 .project {
     background-color: var(--beige);
 }
+
+
 
 @media only screen and (max-width: 600px) {
     .projects {

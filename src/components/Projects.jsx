@@ -1,17 +1,28 @@
 import { useState, useEffect } from 'react'
 import './Projects.css'
 import Bar from './Bar'
+import Description from './Description'
 
+// api url for my repositories
 const url = 'https://api.github.com/users/limiajayi/repos'
 
 const Project = ({ className, color, repo }) => {
+
   return (
     <div className={className}>
       <Bar text={"Project"} color={color} />
-      hi im a project
+
+      <Description 
+      name={repo.name} 
+      description={repo.description}
+      language={repo.language}
+      url={repo.clone_url}
+      homepage={repo.homepage}/>
+
     </div>
   )
 }
+
 
 const Projects = () => {
 
@@ -22,10 +33,10 @@ const Projects = () => {
     const repos = await response.json();
 
     const reposArray = repos.filter((repo) => {
-      return repo.name === "Actual-NEA" 
+      return repo.name === "NEA" 
       || repo.name === "Java-Space-Game" 
-      || repo.name === "motivation" 
-      || repo.name === "comprehension"
+      || repo.name === "Motivation" 
+      || repo.name === "Annotations"
     })
 
     setRepos(reposArray)
@@ -35,14 +46,24 @@ const Projects = () => {
     getRepos()
   }, [])
 
+  // sort repos by last updated, in ascending order 
+  // most recent repo will be the first element
+  const sortedRepos = [...repos].sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
 
 
   return (
-    <div className="projects border">
-        <Project className={"bigProject border"} color={"pink"} />
-        <Project className={"project border"} color={"purple"} />
-        <Project className={"project border"} color={"purple"} />
-        <Project className={"project border"} color={"purple"} />
+    <div className="projects">
+
+      {
+        sortedRepos.map((repo) => {
+          if (sortedRepos.indexOf(repo) === 0) {
+            return  <Project id={repo.id} className={"bigProject border"} color={"pink"} repo={repo}/>
+          }
+          return (
+            <Project id={repo.id} className={"project border"} color={"purple"} repo={repo}/>
+          )
+        })
+      }
     </div>
   )
 }
