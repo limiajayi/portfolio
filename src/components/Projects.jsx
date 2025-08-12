@@ -3,14 +3,14 @@ import './Projects.css'
 import Bar from './Bar'
 import Description from './Description'
 
-// api url for my repositories
+// github repository api url for projects component
 const url = 'https://api.github.com/users/limiajayi/repos'
 
-const Project = ({ className, color, repo }) => {
+const Project = ({ text, className, color, repo }) => {
 
   return (
     <div className={className}>
-      <Bar text={"Project"} color={color} />
+      <Bar text={text} color={color} />
 
       <Description 
       name={repo.name} 
@@ -26,12 +26,14 @@ const Project = ({ className, color, repo }) => {
 
 const Projects = () => {
 
+  //state object to store repo objects
   const [repos, setRepos] = useState([])
 
   const getRepos = async () => {
     const response = await fetch(url)
     const repos = await response.json();
 
+    //filtering for specific projects based on their name
     const reposArray = repos.filter((repo) => {
       return repo.name === "NEA" 
       || repo.name === "Java-Space-Game" 
@@ -54,16 +56,18 @@ const Projects = () => {
   return (
     <div className="projects">
 
+      {/* mapping each repo object to it's own project component */}
       {
         sortedRepos.map((repo) => {
           if (sortedRepos.indexOf(repo) === 0) {
-            return  <Project id={repo.id} className={"bigProject border"} color={"pink"} repo={repo}/>
+            return  <Project text={"Current Project"} id={repo.id} className={"bigProject border"} color={"pink"} repo={repo}/>
           }
           return (
-            <Project id={repo.id} className={"project border"} color={"purple"} repo={repo}/>
+            <Project text={"Project"} id={repo.id} className={"project border"} color={"purple"} repo={repo}/>
           )
         })
       }
+
     </div>
   )
 }
