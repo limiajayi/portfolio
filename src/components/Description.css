@@ -9,14 +9,21 @@
 
 .description small {
     display: inline-block;
-    margin: .5rem;
+    margin-top: .5rem;
+}
+
+.projectName {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
 }
 
 .links {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    margin: 0;
+
 }
 
 .links div {

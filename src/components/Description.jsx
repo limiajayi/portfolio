@@ -24,7 +24,7 @@ const Description = ({ name, description, language, url, homepage }) => {
 
     return (
         <div className="description">
-            <div>
+            <div className="projectName">
                 {name}
             </div>
             <div>
