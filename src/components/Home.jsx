@@ -1,5 +1,6 @@
 import './Home.css'
 import Bar from './Bar'
+import AboutContainer from './AboutContainer'
 
 const Work = () => {
     return (
@@ -13,7 +14,7 @@ const About = () => {
     return (
         <div className="about border">
             <Bar text={"About"} color={"pink"}/>
-            
+            <AboutContainer />
         </div>
     )
 }

@@ -24,9 +24,9 @@ const Description = ({ name, description, language, url, homepage }) => {
 
     return (
         <div className="description">
-            <h4>
+            <div>
                 {name}
-            </h4>
+            </div>
             <div>
                 {description}
             </div>
