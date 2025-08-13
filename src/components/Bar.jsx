@@ -18,8 +18,13 @@ const Bar = ({ text, color }) => {
 
     return (
         <div className="bar" style={handleColor()}>
-            <div>
-                { text }
+            <div className='barContainer'>
+                <div className='barHeading'>
+                    { text }
+                </div>
+                <div className="barImage">
+                    <img src="mac-whatevr.svg" alt="" />
+                </div>
             </div>
         </div>
     )

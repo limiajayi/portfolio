@@ -60,10 +60,10 @@ const Projects = () => {
       {
         sortedRepos.map((repo) => {
           if (sortedRepos.indexOf(repo) === 0) {
-            return  <Project text={"Current Project"} id={repo.id} className={"bigProject border"} color={"pink"} repo={repo}/>
+            return  <Project text={"Current Project"} key={repo.id} className={"bigProject border"} color={"pink"} repo={repo}/>
           }
           return (
-            <Project text={"Project"} id={repo.id} className={"project border"} color={"purple"} repo={repo}/>
+            <Project text={"Project"} key={repo.id} className={"project border"} color={"purple"} repo={repo}/>
           )
         })
       }
