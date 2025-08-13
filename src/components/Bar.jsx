@@ -8,11 +8,11 @@ const Bar = ({ text, color }) => {
     const handleColor = () => {
         if ( color === "pink") {
             return {
-                backgroundColor: "rgba(246, 158, 196, 1)"
+                backgroundColor: "var(--pink)"
             }
         }
         return {
-            backgroundColor: "rgba(161, 132, 186, 1)"
+            backgroundColor: "var(--purple)"
         }
     }
 
