@@ -63,7 +63,7 @@ const Projects = () => {
             return  <Project text={"Current Project"} key={repo.id} className={"bigProject border"} color={"pink"} repo={repo}/>
           }
           return (
-            <Project text={"Project"} key={repo.id} className={"project border"} color={"purple"} repo={repo}/>
+            <Project text={"./Projects"} key={repo.id} className={"project border"} color={"purple"} repo={repo}/>
           )
         })
       }

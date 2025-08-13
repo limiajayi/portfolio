@@ -5,13 +5,13 @@
     height: 150%;
     background: linear-gradient(210deg, #ffeedb 17%, #ffd3d3 60%);
     text-align: left;
-    color: black;
+    color: var(--black);
     font-family: "Onest", sans-serif;
     font-optical-sizing: auto;
     --pink: rgba(246, 158, 196, 1);
     --purple: rgba(161, 132, 186, 1);
     --beige: rgb(253, 252, 235);
-    --black: rgb(78, 12, 12);
+    --black: rgb(41, 10, 10);
 }
 
 body {
