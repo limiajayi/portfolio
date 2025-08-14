@@ -23,7 +23,7 @@ const Bar = ({ text, color }) => {
                     { text }
                 </div>
                 <div className="barImage">
-                    <img src="mac-whatevr.svg" alt="" />
+                        <img src="mac-whatevr.svg" alt="" />
                 </div>
             </div>
         </div>

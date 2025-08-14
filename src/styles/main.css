@@ -12,6 +12,7 @@
     --purple: rgba(161, 132, 186, 1);
     --beige: rgb(253, 252, 235);
     --black: rgb(41, 10, 10);
+    cursor: url('cursor1.svg') 20 20, auto;
 }
 
 body {
@@ -22,6 +23,11 @@ body {
     border: 1.5px outset var(--black);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.border:hover {
+    offset: 10px 30px;
+    transition: .5s ease-in;
 }
 
 @media only screen and (max-width: 600px) {
