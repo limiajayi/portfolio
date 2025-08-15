@@ -1,4 +1,4 @@
-import './Home.css'
+import './styles/Home.css'
 import Bar from './Bar'
 import AboutContainer from './AboutContainer'
 

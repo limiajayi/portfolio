@@ -1,4 +1,4 @@
-import './AboutContainer.css'
+import './styles/AboutContainer.css'
 
 const AboutContainer = () => {
 
@@ -16,7 +16,7 @@ const AboutContainer = () => {
 
                     Learned HTML, CSS and Javascript out of curiousity during lockdown. 
                     Now I'm pursuing a Computer Science degree at the University of Birmingham, 
-                    where I create startup prototypes by day and obsess over Figma wireframes by night. <br /><br />
+                    where I make prototypes by day and obsess over Figma wireframes by night. <br /><br />
                     
                     Offline, I'm doodling comics, switching between crochet projects and training in MMA.
                 </div>

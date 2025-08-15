@@ -1,4 +1,4 @@
-import './Skills.css'
+import './styles/Skills.css'
 import Bar from './Bar'
 
 const Fun = () => {

@@ -1,4 +1,4 @@
-import './Bar.css'
+import './styles/Bar.css'
 
 // --pink: rgba(246, 158, 196, 1);
 //     --purple: rgba(161, 132, 186, 1);

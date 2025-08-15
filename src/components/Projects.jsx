@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './Projects.css'
+import './styles/Projects.css'
 import Bar from './Bar'
 import Description from './Description'
 

@@ -1,4 +1,4 @@
-import './Description.css'
+import './styles/Description.css'
 
 const Links = ({url, homepage}) => {
 

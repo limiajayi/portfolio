@@ -1,6 +1,5 @@
 .main-page {
     position: absolute;
-    overflow: hidden;
     top: 4rem;
     height: 100%;
     display: grid;
