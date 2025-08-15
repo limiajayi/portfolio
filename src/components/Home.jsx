@@ -1,11 +1,13 @@
 import './styles/Home.css'
 import Bar from './Bar'
 import AboutContainer from './AboutContainer'
+import WorkContainer from './WorkContainer'
 
 const Work = () => {
     return (
         <div className="work border">
             <Bar text={"Work Experience"} color={"purple"} />
+            <WorkContainer />
         </div>
     )
 }

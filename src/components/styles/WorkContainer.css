@@ -1,0 +1,5 @@
+.workContainer {
+    display: grid;
+    margin: 1rem;
+    grid-template-rows: repeat(2, 1fr);
+}
