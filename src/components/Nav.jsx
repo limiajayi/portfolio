@@ -1,4 +1,5 @@
 import './styles/Nav.css'
+import Links from './Links'
 
 const Nav = () => {
     return (
@@ -15,6 +16,8 @@ const Nav = () => {
             <div>
                 <a href="#">Skills</a>
             </div>
+
+            <Links />
         </nav>
     )
 }

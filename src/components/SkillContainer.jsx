@@ -19,7 +19,7 @@ const SkillContainer = () => {
                         <li>React</li>
                         <li>Django</li>
                         <li>Figma</li>
-                        <li>Git / Github / Version Control</li>
+                        <li>Git and Github</li>
                     </ul>
                 </div>
 
