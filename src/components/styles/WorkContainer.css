@@ -1,5 +1,29 @@
 .workContainer {
     display: grid;
-    margin: 1rem;
-    grid-template-rows: repeat(2, 1fr);
+    margin: 0;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column: repeat(1, 1fr);
+    height: 100%;
+}
+
+.workContent {
+    border-bottom: 1.5px solid var(--black);
+    grid-column: 1;
+    padding: .7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.workContent .workInfo {
+    margin-left: 1rem;
+}
+
+.workContent h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.last {
+    border-bottom: none;
 }

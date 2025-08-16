@@ -22,7 +22,7 @@
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: 1fr;
         grid-column: 1 / 3;
-        height: 29rem;
+        height: 45rem;
     }
 
     .about {
