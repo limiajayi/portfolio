@@ -1,0 +1,8 @@
+.skillContainer {
+    margin: .7rem;
+}
+
+.skillContainer .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

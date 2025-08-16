@@ -1,5 +1,6 @@
 import './styles/Skills.css'
 import Bar from './Bar'
+import SkillContainer from './SkillContainer'
 
 const Fun = () => {
     return (
@@ -14,7 +15,7 @@ const Skill = () => {
     return (
         <div className="skill border">
             <Bar text={"Skills"} color={"pink"} />
-            yoooo im skills
+            <SkillContainer />
         </div>
     )
 }
