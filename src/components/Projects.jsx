@@ -37,7 +37,7 @@ const Projects = () => {
     const reposArray = repos.filter((repo) => {
       return repo.name === "NEA" 
       || repo.name === "Java-Space-Game" 
-      || repo.name === "Motivation" 
+      || repo.name === "Affirmations" 
       || repo.name === "Annotations"
     })
 

@@ -5,7 +5,7 @@
     background: linear-gradient(210deg, #ffeedb 17%, #ffd3d3 60%);
     width: 100%;
     border-bottom: 1.5px solid var(--black);
-    height: 3.5rem;
+    height: 10%;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;

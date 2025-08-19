@@ -1,6 +1,6 @@
 .main-page {
     position: absolute;
-    top: 4rem;
+    top: 4.5rem;
     height: 100%;
     display: grid;
     grid-template-rows: repeat(3, 1fr);

@@ -8,13 +8,7 @@ const Nav = () => {
                 <a href="#">Temi Ajayi</a>
             </div>
             <div>
-                <a href="#">Home</a>
-            </div>
-            <div>
                 <a href="#projects">Projects</a>
-            </div>
-            <div>
-                <a href="#">Skills</a>
             </div>
 
             <Links />
