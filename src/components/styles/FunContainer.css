@@ -1,0 +1,14 @@
+.funContainer {
+    margin: .7rem;
+
+}
+
+.funContainer ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.funContainer ul li {
+    margin: 0 0;
+}
