@@ -20,10 +20,11 @@ const Links = ({url, homepage}) => {
 
 }
 
-const Description = ({ name, description, language, url, homepage }) => {
+const Description = ({ className, name, description, language, url, homepage }) => {
 
     return (
         <div className="description">
+
             <div className="projectName">
                 {name}
             </div>

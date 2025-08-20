@@ -21,3 +21,14 @@
 .navbar div {
     margin: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        height: 6%;
+    }
+
+    .navbar div {
+        margin: .5rem;
+    }
+
+}

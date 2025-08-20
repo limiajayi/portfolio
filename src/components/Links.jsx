@@ -13,9 +13,6 @@ const Links = () => {
                 <a href="mailto:limiajayi@gmail.com">
                     <img src="email.svg" alt="" />
                 </a>
-                <a href="TemiAjayi.pdf" download>
-                    <img src="cv-icon.svg" alt="" />
-                </a>
             </div>
         </div>
     )

@@ -1,10 +1,8 @@
-import { useState } from 'react'
 import Home from './components/Home.jsx'
 import Projects from './components/Projects.jsx'
 import Nav from './components/Nav.jsx'
 import Skills from './components/Skills.jsx'
 import './styles/App.css'
-import Links from './components/Links.jsx'
 
 const App = () => {
   

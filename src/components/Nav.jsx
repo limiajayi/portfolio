@@ -4,10 +4,10 @@ import Links from './Links'
 const Nav = () => {
     return (
         <nav className="navbar">
-            <div>
-                <a href="#">Temi Ajayi</a>
+            <div className='textLink'>
+                <a href="#home">Temi Ajayi</a>
             </div>
-            <div>
+            <div className='textLink'>
                 <a href="#projects">Projects</a>
             </div>
 

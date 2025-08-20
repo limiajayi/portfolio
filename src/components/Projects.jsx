@@ -13,6 +13,7 @@ const Project = ({ text, className, color, repo }) => {
       <Bar text={text} color={color} />
 
       <Description 
+      className={className}
       name={repo.name} 
       description={repo.description}
       language={repo.language}
