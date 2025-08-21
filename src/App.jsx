@@ -13,6 +13,7 @@ const App = () => {
       <Home />
       <Projects />
       <Skills />
+      <div className='text'>Built and Designed by Temi Ajayi.</div>
     </div>
     </>
   )
