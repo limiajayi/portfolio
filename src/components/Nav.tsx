@@ -13,7 +13,7 @@ const Nav: FC = () => {
                 </div>
                 <div className="link">
                     <a href="">
-                       Projects
+                        Projects
                     </a>
                 </div>
             </div>
