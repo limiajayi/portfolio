@@ -29,6 +29,11 @@ const Nav: FC = () => {
                         <img src="linkedin.svg" alt="The LinkedIn Logo" />
                     </a>
                 </div>
+                <div className="link">
+                    <a href="mailto:limiajayi@gmail.com">
+                        <img src="email.svg" alt="An Email Logo" />
+                    </a>
+                </div>
             </div>
         </nav>
     )
