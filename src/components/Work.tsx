@@ -28,6 +28,7 @@ const Work: FC = () => {
     useEffect(() => {fetchTextFile()}, [])
 
     const workLines = works.split('\r\n\r\n')
+    console.log(workLines)
 
     return (
         <div className="work border">
