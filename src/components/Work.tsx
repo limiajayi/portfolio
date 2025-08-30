@@ -29,7 +29,7 @@ const Work: FC = () => {
     return (
         <div className="work border">
             <Bar text={"Work Experience"} color={"purple"} />
-            {arr.length > 0 && arr[0].length > 0 ? arr[0][0] : null}
+            {arr.length > 0 && arr[0].length > 0 ? arr[0][0] : ""}
         </div>
     )
 }
