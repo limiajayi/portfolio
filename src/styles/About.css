@@ -46,4 +46,12 @@
         grid-column: 1 / 1;
         width: 100%;
     }
+
+    .aboutContainer img {
+        display: none;
+    }
+
+    .aboutContainer .textContainer {
+    margin-left: .4rem;
+    }
 }
