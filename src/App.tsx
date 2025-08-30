@@ -1,10 +1,13 @@
-import './App.css'
+import Nav from "./components/Nav"
 
 function App() {
 
   return (
     <>
-      <p>called the midwest</p>
+      <Nav />
+      <section className="main">
+
+      </section>
     </>
   )
 }
