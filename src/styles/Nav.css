@@ -2,7 +2,7 @@ nav.navbar {
     position: fixed;
     top: 0;
     z-index: 2;
-    background-color: linear-gradient(210deg, #ffeedb 17%, #ffd3d3 60%);
+    background: linear-gradient(210deg, #ffeedb 17%, #ffd3d3 60%);
     width: 100%;
     border-bottom: 1.5px solid var(--black);
     height: 10%;
@@ -38,7 +38,7 @@ nav.navbar div {
 
 @media only screen and (max-width: 600px) {
     nav.navbar {
-        height: 6%;
+        height: 10%;
         top: 2px;
     }
 

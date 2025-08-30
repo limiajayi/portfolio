@@ -1,0 +1,17 @@
+.bar {
+    width: 100%;
+    height: 1.5rem;
+    padding: .4rem 0;
+    border-bottom: 1.5px solid var(--black);
+    font-weight: 700;
+}
+
+.barContainer {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr)
+}
+
+.bar .barHeading {
+    margin-left: .5rem;
+    grid-column: 1 / 9;
+}
