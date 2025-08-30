@@ -27,7 +27,7 @@ const Work: FC = () => {
 
     useEffect(() => {fetchTextFile()}, [])
 
-    const workLines = works.split('\r\n\r\n')
+    const workLines = works.split('\n\n')
     console.log(workLines)
 
     return (
