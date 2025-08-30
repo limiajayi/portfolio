@@ -7,8 +7,10 @@ const fileName: string = 'workExperience.txt'
 const Work: FC = () => {
 
     const [works, setWorks] = useState<string>("")
+    const [isLoading, setIsLoading] = useState<boolean>(false)
 
     const fetchTextFile = async (): Promise<void> => {
+        setIsLoading(true)
         try {
             //fetch the file full of my work experience
             const response: Response = await fetch(fileName)
@@ -18,17 +20,24 @@ const Work: FC = () => {
             
         } catch (error) {
             console.log("Error loading file: ", error)
+        } finally {
+            setIsLoading(false)
         }
     }
 
     useEffect(() => {fetchTextFile()}, [])
 
-    const arr: string[] = works.split(/\r\n\r\n/)
+    const workLines = works.split('\r\n\r\n')
 
     return (
         <div className="work border">
             <Bar text={"Work Experience"} color={"purple"} />
-            {arr.length > 0 && arr[0].length > 0 ? arr[0] : ""}
+            <div>
+                {workLines.map((line, index) => {
+                    return <p key={index}>{line}</p>
+                })}
+            </div>
+            {isLoading ? <div>Loading...</div> : ""}
         </div>
     )
 }
