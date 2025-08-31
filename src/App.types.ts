@@ -10,5 +10,5 @@ export type WorkExperienceProps =  {
 
 export type ProjectLinksProps = {
     url: string;
-    homepage: string | null;
+    homepage: string | undefined;
 }
