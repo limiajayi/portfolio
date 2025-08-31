@@ -8,6 +8,8 @@ const fileName: string = 'workExperience.txt'
 const WorkExperience: FC<WorkExperienceProps> = ({ workLines }) => {
     const [selected, setSelected] = useState<number>(0)
 
+    setSelected(0)
+
     return (
         <div>
             { workLines[selected] }
@@ -47,7 +49,7 @@ const Work: FC = () => {
     const workLines = works.split(/\n\n/)
     const newLines = workLines.map(line => line.split(/\n/))
 
-    console.log(newLines)
+    console.log(newLines[0])
 
     return (
         <div className="work border">
@@ -55,6 +57,7 @@ const Work: FC = () => {
     
             {isLoading && newLines.length > 0 && newLines[0].length > 0 ? 
             <div>Loading...</div> : <WorkExperience workLines={newLines} />} 
+
         </div>
     )
 }
