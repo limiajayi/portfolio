@@ -1,8 +1,21 @@
 import { useEffect, useState, type FC } from 'react'
 import '../styles/Work.css'
 import Bar from './Bar'
+import type { WorkExperienceProps } from '../App.types'
 
 const fileName: string = 'workExperience.txt'
+
+const WorkExperience: FC<WorkExperienceProps> = ({ workLines }) => {
+    const [selected, setSelected] = useState<number>(0)
+
+    return (
+        <div>
+            { workLines[selected] }
+        </div>
+    )
+
+
+}
 
 const Work: FC = () => {
 
@@ -16,7 +29,11 @@ const Work: FC = () => {
             const response: Response = await fetch(fileName)
             const text: string = await response.text()
 
-            setWorks(text)
+            //replaces the carriage every \r\n with \n for formatting and deploying reasons
+            const editText: string = text.replace(/\r\n\r\n/g, "\n\n")
+            const newText: string = editText.replace(/\r\n/g, "\n")
+
+            setWorks(newText)
             
         } catch (error) {
             console.log("Error loading file: ", error)
@@ -27,18 +44,17 @@ const Work: FC = () => {
 
     useEffect(() => {fetchTextFile()}, [])
 
-    const workLines = works.split('\n\n')
-    console.log(workLines)
+    const workLines = works.split(/\n\n/)
+    const newLines = workLines.map(line => line.split(/\n/))
+
+    console.log(newLines)
 
     return (
         <div className="work border">
             <Bar text={"Work Experience"} color={"purple"} />
-            <div>
-                {workLines.map((line, index) => {
-                    return <p key={index}>{line}</p>
-                })}
-            </div>
-            {isLoading ? <div>Loading...</div> : ""}
+    
+            {isLoading && newLines.length > 0 && newLines[0].length > 0 ? 
+            <div>Loading...</div> : <WorkExperience workLines={newLines} />} 
         </div>
     )
 }
