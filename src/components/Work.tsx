@@ -5,14 +5,20 @@ import type { WorkExperienceProps } from '../App.types'
 
 const fileName: string = 'workExperience.txt'
 
-const WorkExperience: FC<WorkExperienceProps> = ({ workLines }) => {
-    const [selected, setSelected] = useState<number>(0)
+const WorkExperience: FC<WorkExperienceProps> = ({ className, workLines }) => {
 
-    setSelected(0)
 
     return (
-        <div>
-            { workLines[selected] }
+        <div className={className}>
+            <img src="workIcon.svg" alt="Briefcase Icon" />
+            <div className='workInfo'>
+                <h4>
+                    {workLines[0]}
+                </h4>
+                <div>
+                    {workLines[1]}
+                </div>
+            </div>
         </div>
     )
 
@@ -55,8 +61,16 @@ const Work: FC = () => {
         <div className="work border">
             <Bar text={"Work Experience"} color={"purple"} />
     
-            {isLoading && newLines.length > 0 && newLines[0].length > 0 ? 
-            <div>Loading...</div> : <WorkExperience workLines={newLines} />} 
+            <div className="workContainer">
+                    {isLoading && newLines.length > 0 && newLines[0].length > 0 ? 
+                    <div>Loading...</div> : "" } 
+                    {newLines.map((line, index) => {
+                    if (index === 2) {
+                        return <WorkExperience className={"workContent last"} key={index} workLines={line} />
+                    }
+                    return <WorkExperience className={"workContent"} key={index} workLines={line}/>
+                    })}
+            </div>
 
         </div>
     )

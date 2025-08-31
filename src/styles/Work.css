@@ -3,6 +3,35 @@
     background-color: var(--beige);
 }
 
+.workContainer {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+}
+
+.workContent {
+    border-bottom: 1.5px solid var(--black);
+    grid-column: 1;
+    padding: .7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.workContent .workInfo {
+    margin-left: 1rem;
+}
+
+.workContent h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.last {
+    border-bottom: none;
+}
+
 @media only screen and (max-width: 600px) {
     .work {
         grid-row: 2 / 2;

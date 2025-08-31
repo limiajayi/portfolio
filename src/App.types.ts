@@ -4,5 +4,6 @@ export type BarProps = {
 }
 
 export type WorkExperienceProps =  {
-    workLines: string[][];
+    className: string;
+    workLines: string[];
 }
