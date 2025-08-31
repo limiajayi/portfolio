@@ -1,9 +1,21 @@
+import type { DescriptionProps } from '../App.types'
+import type { FC } from 'react'
 import '../styles/Description.css'
+import ProjectLinks from './ProjectLinks'
 
-const Description = () => {
+const Description: FC<DescriptionProps> = ({ name, description, language, url, homepage }) => {
     return (
-        <div>
-
+        <div className='description'>
+            <div className='projectName'>
+                {name}
+            </div>
+            <div>
+                {description}
+            </div>
+            <small>
+                {language}
+            </small>
+            <ProjectLinks url={url} homepage={homepage} />
         </div>
     )
 }
