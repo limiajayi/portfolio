@@ -39,7 +39,7 @@ nav.navbar div {
 @media only screen and (max-width: 600px) {
     nav.navbar {
         height: 10%;
-        top: 2px;
+        top: 0px;
     }
 
     nav.navbar div {

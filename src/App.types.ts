@@ -9,11 +9,13 @@ export type WorkExperienceProps =  {
 }
 
 export type Repo = {
+    id: number;
     name: string;
     description: string;
     language: string;
     clone_url: string;
     homepage: string;
+    updated_at: string;
 }
 
 export type ProjectProps = {
