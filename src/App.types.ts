@@ -13,7 +13,7 @@ export type Repo = {
     description: string;
     language: string;
     clone_url: string;
-    homepage: string | undefined | null;
+    homepage: string;
 }
 
 export type ProjectProps = {
@@ -25,7 +25,7 @@ export type ProjectProps = {
 
 export type ProjectLinksProps = {
     url: string;
-    homepage: string | undefined;
+    homepage: string;
 }
 
 export type DescriptionProps = {
@@ -33,5 +33,5 @@ export type DescriptionProps = {
     description: string;
     language: string;
     url: string;
-    homepage: string | undefined;
+    homepage: string;
 }
