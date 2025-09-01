@@ -1,0 +1,20 @@
+.skill {
+    grid-column: 1fr;
+    background-color: var(--beige);
+}
+
+.skillContainer {
+    margin: .7rem;
+}
+
+.skillContainer .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (max-width: 600px) {
+    .skill {
+        grid-column: 1;
+        width: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+.fun {
+    grid-column: 1fr;
+    background-color: var(--beige);
+}
+
+.funContainer {
+    margin: .7rem;
+
+}
+
+.funContainer ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.funContainer ul li {
+    margin: 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .fun {
+        grid-column: 1;
+        width: 100%;
+    }
+}

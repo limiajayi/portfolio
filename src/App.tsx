@@ -13,6 +13,7 @@ function App() {
         <Home />
         <Projects />
         <Extras />
+        <div className='text'>Built and Designed by Temi Ajayi.</div>
       </div>
     </>
   )

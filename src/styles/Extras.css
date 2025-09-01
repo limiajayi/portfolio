@@ -1,15 +1,16 @@
-.home {
+.extras {
     grid-column: 1 / 3;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
-    .home {
+    .extras {
         display: grid;
+        grid-column: 1 / 3;
+        grid-template-rows: repeat(2, 1fr);
         grid-template-columns: 1fr;
-        grid-row: 1 / 3;
         height: 30rem;
     }
 }

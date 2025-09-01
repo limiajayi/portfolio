@@ -35,6 +35,6 @@ body {
 
 @media only screen and (max-width: 600px) {
     :root {
-        height: 280%;
+        height: 270%;
     }
 }
