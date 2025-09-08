@@ -38,10 +38,10 @@ const Work: FC = () => {
             const text: string = await response.text()
 
             //replaces the carriage every \r\n with \n for formatting and deploying reasons
-            // const editText: string = text.replace(/\r\n\r\n/g, "\n\n")
-            // const newText: string = editText.replace(/\r\n/g, "\n")
+            const editText: string = text.replace(/\r\n\r\n/g, "\n\n")
+            const newText: string = editText.replace(/\r\n/g, "\n")
 
-            setWorks(text)
+            setWorks(newText)
             
         } catch (error) {
             console.log("Error loading file: ", error)
