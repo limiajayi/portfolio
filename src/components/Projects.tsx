@@ -15,10 +15,10 @@ const Projects = () => {
         const repos = await response.json()
 
         const reposArray = repos.filter((repo: Repo) => {
-            return repo.name === "NEA" 
+            return repo.name === "Weather-Bot" 
             || repo.name === "Java-Space-Game"
             || repo.name === "Affirmations"
-            || repo.name === "Annotations"
+            || repo.name === "PlotThePlot-demo"
         })
 
         setRepos(reposArray)

@@ -7,7 +7,7 @@ const Description: FC<DescriptionProps> = ({ name, description, language, url, h
     return (
         <div className='description'>
             <div className='projectName'>
-                {name}
+                {name.replaceAll("-", " ")}
             </div>
             <div>
                 {description}
