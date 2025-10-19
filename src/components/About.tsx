@@ -21,7 +21,7 @@ const About = () => {
                         Now I'm pursuing a Computer Science degree at the University of Birmingham, 
                         where I make prototypes by day and obsess over Figma wireframes by night. <br /><br />
                         
-                        Offline, I'm doodling comics, switching between crochet projects and training in MMA.
+                        Offline, I'm doodling comics, switching between crochet projects and taking pictures of the mundane.
                 </div>
             </div>
         </div>

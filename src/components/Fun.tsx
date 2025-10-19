@@ -10,6 +10,7 @@ const Fun = () => {
             <ul>
                 <li>I've been into art and drawing since I was four</li>
                 <li>I make a point to get a library card at every new city I visit!</li>
+                <li>I'm into photography and taking pictures of everyday sights and objects.</li>
                 <li>I have never missed leg day.</li>
             </ul>
         </div>
