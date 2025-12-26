@@ -12,15 +12,15 @@
     --purple: rgba(161, 132, 186, 1);
     --beige: rgb(253, 252, 235);
     --black: rgb(41, 10, 10);
-    cursor: url('default.svg') 6 6, default;
+    cursor: url('/default.svg') 6 6, default;
 }
 
 h1, h2, h3, h4, h5, .textContainer, .description, .barHeading {
-    cursor: url('text.svg') 5 5, text;
+    cursor: url('/text.svg') 5 5, text;
 }
 
 a, .links {
-    cursor: url('pointer.svg') 5 5, pointer;
+    cursor: url('/pointer.svg') 5 5, pointer;
 }
 
 body {
