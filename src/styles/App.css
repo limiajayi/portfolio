@@ -6,7 +6,7 @@
     margin: .5rem 3rem;
 }
 
-.main .text {
+.main .fineprint {
     opacity: 0.8;
     font-size: small;
     width: 100%;
@@ -21,6 +21,10 @@
     }
 
     .main-page .text {
-        width: 10rem;
+        width: 82rem;
+    }
+
+    .main .fineprint {
+        padding: 3rem 0rem 2rem;
     }
 }
