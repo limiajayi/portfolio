@@ -18,7 +18,7 @@ const Projects = () => {
             return repo.name === "Travelling-Agent" 
             || repo.name === "Java-Space-Game"
             || repo.name === "Affirmations"
-            || repo.name === "PlotThePlot-demo"
+            || repo.name === "NEA"
         })
 
         setRepos(reposArray)
