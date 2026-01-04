@@ -4,7 +4,7 @@ A clean, responsive, and modern portfolio website built with React and TypeScrip
 
 ## Project Structure
 
-[!A tree showing the component structure of my portfolio and how they all link with each other](/assets/project-structure.jpeg)
+[A tree showing the component structure of my portfolio and how they all link with each other](/assets/project-structure.png)
 
 ## 🌐 Live Demo
 Check out the live site [here](https://portfolio-kappa-sepia-46.vercel.app)
