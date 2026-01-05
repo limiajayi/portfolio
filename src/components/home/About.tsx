@@ -1,5 +1,5 @@
-import '../styles/About.css'
-import Bar from './Bar'
+import '../../styles/About.css'
+import Bar from '../Bar'
 
 const About = () => {
     return (

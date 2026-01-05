@@ -1,7 +1,7 @@
 import { useEffect, useState, type FC } from 'react'
-import '../styles/Work.css'
-import Bar from './Bar'
-import type { WorkExperienceProps } from '../App.types'
+import '../../styles/Work.css'
+import Bar from '../Bar'
+import type { WorkExperienceProps } from '../../App.types'
 
 const fileName: string = 'workExperience.txt'
 

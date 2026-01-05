@@ -1,4 +1,4 @@
-import Home from "./components/Home"
+import Home from "./components/home/Home"
 import Nav from "./components/Nav"
 import Projects from "./components/projects/Projects"
 import Extras from "./components/extras/Extras"
