@@ -1,6 +1,6 @@
-import type { DescriptionProps } from '../App.types'
+import type { DescriptionProps } from '../../App.types'
 import type { FC } from 'react'
-import '../styles/Description.css'
+import '../../styles/Description.css'
 import ProjectLinks from './ProjectLinks'
 
 const Description: FC<DescriptionProps> = ({ name, description, language, url, homepage }) => {

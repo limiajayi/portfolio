@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import '../styles/Projects.css'
-import type { Repo } from '../App.types'
+import '../../styles/Projects.css'
+import type { Repo } from '../../App.types'
 import Project from './Project'
 
 const url = 'https://api.github.com/users/limiajayi/repos'
