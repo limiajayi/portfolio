@@ -1,7 +1,7 @@
 import Home from "./components/Home"
 import Nav from "./components/Nav"
 import Projects from "./components/projects/Projects"
-import Extras from "./components/Extras"
+import Extras from "./components/extras/Extras"
 import './styles/App.css'
 
 function App() {

@@ -1,5 +1,5 @@
-import Bar from "./Bar"
-import '../styles/Skill.css'
+import Bar from "../Bar"
+import '../../styles/Skill.css'
 
 const Skill = () => {
     return (

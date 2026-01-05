@@ -37,3 +37,12 @@ export type DescriptionProps = {
     url: string;
     homepage: string;
 }
+
+export type ProjectContextProviderProps = {
+    children: React.ReactNode;
+    name: string;
+    description: string;
+    language: string;
+    url: string;
+    homepage: string;
+}

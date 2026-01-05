@@ -1,5 +1,5 @@
-import Bar from "./Bar"
-import '../styles/Fun.css'
+import Bar from "../Bar"
+import '../../styles/Fun.css'
 
 const Fun = () => {
     return (

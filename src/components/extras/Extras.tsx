@@ -1,4 +1,4 @@
-import '../styles/Extras.css'
+import '../../styles/Extras.css'
 import Fun from './Fun'
 import Skill from './Skill'
 
